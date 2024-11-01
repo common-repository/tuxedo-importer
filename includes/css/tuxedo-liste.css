@@ -1,0 +1,104 @@
+.tuxedo--liste {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.tuxedo--liste__spectacle {
+  width: 100%;
+}
+.tuxedo--liste__spectacle > a {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.tuxedo--liste__spectacle > a:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 767px) {
+  .tuxedo--liste__spectacle > a {
+    flex-direction: column;
+  }
+}
+.tuxedo--liste__image {
+  position: relative;
+  max-width: 40%;
+  margin-right: 20px;
+}
+.tuxedo--liste__image img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .tuxedo--liste__image {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.tuxedo--liste__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tuxedo--liste__content h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  margin: 0 0 3px 0;
+}
+.tuxedo--liste__content span {
+  font-size: 14px;
+  line-height: 14px;
+}
+.tuxedo--liste .tuxedo--spectacle__date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 15px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+.tuxedo--liste .tuxedo--spectacle__date span {
+  text-transform: capitalize;
+}
+.tuxedo--liste .tuxedo--spectacle__prochaine {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.tuxedo--liste .tuxedo--spectacle__cta {
+  font-size: 14px;
+  margin-top: 8px;
+  text-decoration: underline;
+}
+.tuxedo--liste .tuxedo--spectacle__categories {
+  margin-top: 6px;
+}
+.tuxedo--liste .tuxedo--spectacle__subtitle {
+  margin-top: 6px;
+}
+.tuxedo--liste .tuxedo--spectacle__separator {
+  margin: 0 5px;
+}
+.tuxedo--spectacle__tag {
+  z-index: 2;
+  position: absolute;
+  background-color: var(--global--color-background, var(--wp--preset--color--background, white));
+  border: 1px solid var(--global--color-primary, var(--wp--preset--color--foreground, black));
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 8px 12px;
+  max-width: 70%;
+}
+
+/*# sourceMappingURL=tuxedo-liste.css.map */
